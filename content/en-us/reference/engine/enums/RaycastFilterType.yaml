@@ -26,3 +26,21 @@ items:
       filter list will be considered in the raycast operation.
     tags: []
     deprecation_message: ''
+      - name: Blacklist
+    value: 0
+    summary: |
+      Every `Class.BasePart` in the raycast operation will be considered
+      **except** those that are descendants of objects in the filter list.
+    tags: []
+    deprecation_message: | 
+        This EnumItem is **deprecated** and is no longer in use.
+        Use `Enum.RaycastFilterType.Exclude` instead.'
+  - name: Whitelist
+    value: 1
+    summary: |
+      Only `Class.BasePart|BaseParts` which are descendants of objects in the
+      filter list will be considered in the raycast operation.
+    tags: []
+    deprecation_message: | 
+        This EnumItem is **deprecated** and is no longer in use.
+        Use `Enum.RaycastFilterType.Include` instead.'
